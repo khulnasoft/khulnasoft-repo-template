@@ -21,5 +21,5 @@ assignees: ''
 <!-- [Optional] Any visual diagrams of the desired user interface. -->
 
 ---
-**[Contributor Guide](https://docs.meshplay.io/project/contributing)**
+**[Contributor Guide](https://docs.meshplay.khulnasoft.com/project/contributing)**
 - 🎨 Wireframes and [designs for KhulnaSoft site](https://www.figma.com/file/5ZwEkSJwUPitURD59YHMEN/KhulnaSoft-Designs) in Figma [(open invite)](https://www.figma.com/team_invite/redeem/qJy1c95qirjgWQODApilR9)

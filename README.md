@@ -21,7 +21,7 @@ Find out more on the <a href="https://khulnasoft.com/community">KhulnaSoft commu
 
 <div>&nbsp;</div>
 
-<a href="https://slack.meshplay.io">
+<a href="https://slack.meshplay.khulnasoft.com">
 
 <picture align="right">
   <source media="(prefers-color-scheme: dark)" srcset=".github/readme/images//slack-dark-128.png"  width="110px" align="right" style="margin-left:10px;margin-top:10px;">
@@ -31,7 +31,7 @@ Find out more on the <a href="https://khulnasoft.com/community">KhulnaSoft commu
 </a>
 
 
-<a href="https://meshplay.io/community"><img alt="KhulnaSoft Community" src=".github/readme/images//community.svg" style="margin-right:8px;padding-top:5px;" width="140px" align="left" /></a>
+<a href="https://meshplay.khulnasoft.com/community"><img alt="KhulnaSoft Community" src=".github/readme/images//community.svg" style="margin-right:8px;padding-top:5px;" width="140px" align="left" /></a>
 
 <p>
 ✔️ <em><strong>Join</strong></em> any or all of the weekly meetings on <a href="https://calendar.google.com/calendar/b/1?cid=bGF5ZXI1LmlvX2VoMmFhOWRwZjFnNDBlbHZvYzc2MmpucGhzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20">community calendar</a>.<br />
