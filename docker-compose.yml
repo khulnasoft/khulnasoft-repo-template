@@ -1,0 +1,26 @@
+services:
+  khulnasoft-repo-template:
+    container_name: ${ENVIRONMENT_NAME:-khulnasoft-repo-template}
+    build:
+      context: .
+      args:
+          USER: ${USER:-devuser}
+          PASSWORD: ${PASSWORD:-1234}
+          P10K_FILE_URL: ${P10K_FILE_URL:-https://raw.githubusercontent.com/romkatv/powerlevel10k/master/config/p10k-rainbow.zsh}
+          ZSHRC_FILE_URL: ${ZSHRC_FILE_URL:-https://raw.githubusercontent.com/khulnasoft/khulnasoft-repo-template/main/dotfiles/.zshrc}
+          NEOVIM_CONFIG_REPO_URL: ${NEOVIM_CONFIG_REPO_URL:-https://github.com/nvim-lua/kickstart.nvim.git}
+          EXPOSE_INTERNAL_PORT_RANGE: ${EXPOSE_INTERNAL_PORT_RANGE:-5170-5199}
+          EXPOSE_INTERNAL_PATH_DIRECTORY: ${EXPOSE_INTERNAL_PATH_DIRECTORY:-/home/${USER:-devuser}/data}
+    volumes:
+        - khulnasoft-repo-template:/home/${USER}
+        - ${EXPOSE_EXTERNAL_PATH_DIRECTORY:-./data}:${EXPOSE_INTERNAL_PATH_DIRECTORY:-/home/${USER:-devuser}/data}
+    stdin_open: true
+    tty: true
+    privileged: true
+    ports:
+        - '${SSH_PORT:-23}:22/tcp'
+        # If you need to open more ports, uncomment this
+        - '${EXPOSE_EXTERNAL_PORT_RANGE:-5170-5199}:${EXPOSE_INTERNAL_PORT_RANGE:-5170-5199}'
+volumes:
+  khulnasoft-repo-template:
+    name: ${ENVIRONMENT_NAME:-khulnasoft-repo-template}
